@@ -1,27 +1,26 @@
-import logo from './logo.svg';
+import React from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import './App.css';
+import NavBar from './components/sideNav'
+import Home from './components/home'
+import About from './components/about'
+import Skills from './components/skills'
+import Project from './components/project'
+import Contact from './components/contact'
 
-class App extends React.Component {
-  render() {
+if (document.documentElement.clientWidth < 480) {
+  document.querySelector("meta[name=viewport]").setAttribute(
+    'content',
+    'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0');
+}
+function App() {
   return (
+
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
     </div>
   );
-}
 }
 
 export default App;
